@@ -11,15 +11,15 @@ describe('Simulera UserInput mot textfält', () => {
 
   it ("mata in namn och ålder i form", () => {
     //Skriva in värden
-    cy.wait(1000)
+    //cy.wait(1000)
     cy.get("#name").type("Marcus")
-    cy.wait(1000)
+    //cy.wait(1000)
     cy.get("#age").type(35)
-    cy.wait(1000)
+    //cy.wait(1000)
 
     //Klicka på button
     cy.get("#btnName").click()
-    cy.wait(1000)
+    //cy.wait(1000)
 
     cy.get("#nameOutput").should("contains.text", "Marcus är 35 år gammal")
     cy.get("h1").should("contains.text", "My First Page")
